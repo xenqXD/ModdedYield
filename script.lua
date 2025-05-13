@@ -215,7 +215,7 @@ Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
 Title.TextSize = 18
-Title.Text = "fortnite cheeto FE v" .. currentVersion
+Title.Text = "ModdedYield FE by xenq v1"
 
 do
 	local emoji = ({
@@ -13034,7 +13034,7 @@ task.spawn(function()
 	Credits:Destroy()
 	IntroBackground:Destroy()
 	minimizeHolder()
-	if IsOnMobile then notify("Unstable Device", "On mobile, fortnite cheeto may have issues or features that are not functioning correctly.") end
+	if IsOnMobile then notify("Unstable Device", "On mobile, ModdedYield may have issues or features that are not functioning correctly.") end
 end)
 
 if os.date("%m %d") == "04 01" then
