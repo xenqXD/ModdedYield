@@ -1,3 +1,17 @@
+-- anticheat bypass
+local registery = getreg()
+
+for i,v in pairs(registery) do
+if type(v) == "function" then
+local info = getinfo(v)
+if info.name == "kick" then
+hookfunction(info.func,function(...) return nil end)
+print("[ModdedYield] AntiKick blocked an attempt!")
+end
+end
+end 
+-- works the best on tower of hell
+
 if IY_LOADED and not _G.IY_DEBUG == true then
     -- error("Modded Yield is already running!", 0)
     return
