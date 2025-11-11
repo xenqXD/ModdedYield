@@ -1,9 +1,8 @@
 --[[
 
-	TuffSploit
-	For ferns.club
-	By xenqXD
-	blame SonicElijahMania!
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
 
 ]]
 
@@ -32,6 +31,7 @@ local TextLabel_3 = Instance.new("TextLabel")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.new(0.262745, 0.262745, 0.262745)
@@ -59,7 +59,7 @@ TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton.BackgroundTransparency = 1
 TextButton.BorderColor3 = Color3.new(0, 0, 0)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0309194475, 0, 0.204825997, 0)
+TextButton.Position = UDim2.new(0.0243994873, 0, 0.218855172, 0)
 TextButton.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton.Font = Enum.Font.SourceSansBold
 TextButton.Text = "Energize"
@@ -73,7 +73,7 @@ TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_2.BackgroundTransparency = 1
 TextButton_2.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.374288052, 0, 0.204825997, 0)
+TextButton_2.Position = UDim2.new(0.367768109, 0, 0.218855172, 0)
 TextButton_2.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_2.Font = Enum.Font.SourceSansBold
 TextButton_2.Text = "Creeper [R6]"
@@ -87,7 +87,7 @@ TextButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_3.BackgroundTransparency = 1
 TextButton_3.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.732302666, 0, 0.204825997, 0)
+TextButton_3.Position = UDim2.new(0.725782752, 0, 0.218855172, 0)
 TextButton_3.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_3.Font = Enum.Font.SourceSansBold
 TextButton_3.Text = "Dog"
@@ -101,7 +101,7 @@ TextButton_4.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_4.BackgroundTransparency = 1
 TextButton_4.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.732302666, 0, 0.381593674, 0)
+TextButton_4.Position = UDim2.new(0.725782752, 0, 0.395622849, 0)
 TextButton_4.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_4.Font = Enum.Font.SourceSansBold
 TextButton_4.Text = "Sniper"
@@ -115,7 +115,7 @@ TextLabel_2.BackgroundColor3 = Color3.new(0.262745, 0.262745, 0.262745)
 TextLabel_2.BackgroundTransparency = 1
 TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(1.15724003, 0, -0.0112234578, 0)
+TextLabel_2.Position = UDim2.new(1.16376007, 0, -0.0112234578, 0)
 TextLabel_2.Size = UDim2.new(1, 0, 1, 0)
 TextLabel_2.Font = Enum.Font.SourceSansBold
 TextLabel_2.Text = "< -Requires Asset  5063578607"
@@ -129,7 +129,7 @@ TextButton_5.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_5.BackgroundTransparency = 1
 TextButton_5.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_5.BorderSizePixel = 0
-TextButton_5.Position = UDim2.new(0.0309194475, 0, 0.381593674, 0)
+TextButton_5.Position = UDim2.new(0.0243994873, 0, 0.395622849, 0)
 TextButton_5.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_5.Font = Enum.Font.SourceSansBold
 TextButton_5.Text = "Walk On Walls"
@@ -143,7 +143,7 @@ TextButton_6.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_6.BackgroundTransparency = 1
 TextButton_6.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_6.BorderSizePixel = 0
-TextButton_6.Position = UDim2.new(0.374288052, 0, 0.381593674, 0)
+TextButton_6.Position = UDim2.new(0.367768109, 0, 0.395622849, 0)
 TextButton_6.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_6.Font = Enum.Font.SourceSansBold
 TextButton_6.Text = "Russian Kick"
@@ -157,10 +157,10 @@ TextButton_7.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_7.BackgroundTransparency = 1
 TextButton_7.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_7.BorderSizePixel = 0
-TextButton_7.Position = UDim2.new(0.732302666, 0, 0.552749693, 0)
+TextButton_7.Position = UDim2.new(0.725782752, 0, 0.566778839, 0)
 TextButton_7.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_7.Font = Enum.Font.SourceSansBold
-TextButton_7.Text = "Walkspeed Increase"
+TextButton_7.Text = "Reanimation"
 TextButton_7.TextColor3 = Color3.new(1, 1, 1)
 TextButton_7.TextScaled = true
 TextButton_7.TextSize = 14
@@ -171,7 +171,7 @@ TextButton_8.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_8.BackgroundTransparency = 1
 TextButton_8.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_8.BorderSizePixel = 0
-TextButton_8.Position = UDim2.new(0.0309194475, 0, 0.552749693, 0)
+TextButton_8.Position = UDim2.new(0.0243994873, 0, 0.566778839, 0)
 TextButton_8.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_8.Font = Enum.Font.SourceSansBold
 TextButton_8.Text = "Pile of limbs"
@@ -185,7 +185,7 @@ TextButton_9.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_9.BackgroundTransparency = 1
 TextButton_9.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_9.BorderSizePixel = 0
-TextButton_9.Position = UDim2.new(0.374288052, 0, 0.552749693, 0)
+TextButton_9.Position = UDim2.new(0.367768109, 0, 0.566778839, 0)
 TextButton_9.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_9.Font = Enum.Font.SourceSansBold
 TextButton_9.Text = "Fly"
@@ -199,7 +199,7 @@ TextButton_10.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_10.BackgroundTransparency = 1
 TextButton_10.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_10.BorderSizePixel = 0
-TextButton_10.Position = UDim2.new(0.374288052, 0, 0.732323229, 0)
+TextButton_10.Position = UDim2.new(0.367768109, 0, 0.746352434, 0)
 TextButton_10.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_10.Font = Enum.Font.SourceSansBold
 TextButton_10.Text = "Spider"
@@ -213,7 +213,7 @@ TextButton_11.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_11.BackgroundTransparency = 1
 TextButton_11.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_11.BorderSizePixel = 0
-TextButton_11.Position = UDim2.new(0.0309194475, 0, 0.732323229, 0)
+TextButton_11.Position = UDim2.new(0.0243994873, 0, 0.746352434, 0)
 TextButton_11.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_11.Font = Enum.Font.SourceSansBold
 TextButton_11.Text = "Flip"
@@ -227,10 +227,10 @@ TextButton_12.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_12.BackgroundTransparency = 1
 TextButton_12.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_12.BorderSizePixel = 0
-TextButton_12.Position = UDim2.new(0.732302666, 0, 0.732323229, 0)
+TextButton_12.Position = UDim2.new(0.725782752, 0, 0.746352434, 0)
 TextButton_12.Size = UDim2.new(0.25, 0, 0.150000006, 0)
 TextButton_12.Font = Enum.Font.SourceSansBold
-TextButton_12.Text = "Default  Walkspeed"
+TextButton_12.Text = "Explode Anim"
 TextButton_12.TextColor3 = Color3.new(1, 1, 1)
 TextButton_12.TextScaled = true
 TextButton_12.TextSize = 14
@@ -241,7 +241,7 @@ TextLabel_3.BackgroundColor3 = Color3.new(0.262745, 0.262745, 0.262745)
 TextLabel_3.BackgroundTransparency = 0.6000000238418579
 TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0, 0, 0.973625183, 0)
+TextLabel_3.Position = UDim2.new(0, 0, 0.998877704, 0)
 TextLabel_3.Size = UDim2.new(1, 0, 0.150000006, 0)
 TextLabel_3.Font = Enum.Font.SourceSansBold
 TextLabel_3.Text = "Most of the scripts may not work!"
@@ -252,103 +252,103 @@ TextLabel_3.TextWrapped = true
 
 -- Scripts
 
-local function EEHRRSB_fake_script() -- TextButton.LocalScript 
+local function ZIDOHYU_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/FEEGGEG/refs/heads/main/%5BFE%5D%20Energize%20Animation%20Gui.txt",true))()
 	end)
 end
-coroutine.wrap(EEHRRSB_fake_script)()
-local function ESNQUEJ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(ZIDOHYU_fake_script)()
+local function HKTDDQF_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/FEEGGEG/refs/heads/main/%5BFE%5D%20Creeper%20%5BR6%5D.txt",true))()
 	end)
 end
-coroutine.wrap(ESNQUEJ_fake_script)()
-local function GBEDC_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(HKTDDQF_fake_script)()
+local function LVRZQQ_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/kMJc4C8F",true))()
 	end)
 end
-coroutine.wrap(GBEDC_fake_script)()
-local function SYRLDQO_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(LVRZQQ_fake_script)()
+local function OOZSO_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://gist.githubusercontent.com/breadyfinn/7d04653ac4a68692f44f916d04d9e549/raw/c15bc7d73a8bce77b066ac53f96e8095dc623ffb/gistfile1.txt",true))()
 	end)
 end
-coroutine.wrap(SYRLDQO_fake_script)()
-local function DFSJDBV_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(OOZSO_fake_script)()
+local function EHPMZ_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/ZepAFJEN",true))()
 	end)
 end
-coroutine.wrap(DFSJDBV_fake_script)()
-local function VOPKG_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(EHPMZ_fake_script)()
+local function QCQKOU_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/ykdDKVjJ",true))()
 	end)
 end
-coroutine.wrap(VOPKG_fake_script)()
-local function YHDHGD_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(QCQKOU_fake_script)()
+local function XCFBG_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xenqXD/ModdedYield/refs/heads/main/MoonReanim.lua",true))()
 	end)
 end
-coroutine.wrap(YHDHGD_fake_script)()
-local function MPZQVB_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(XCFBG_fake_script)()
+local function HSGC_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/0Z7f9mha",true))()
 	end)
 end
-coroutine.wrap(MPZQVB_fake_script)()
-local function QGPLOZ_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(HSGC_fake_script)()
+local function LHGQZKG_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 	end)
 end
-coroutine.wrap(QGPLOZ_fake_script)()
-local function ZYNDBL_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(LHGQZKG_fake_script)()
+local function FBNVEJA_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/xenqXD/ModdedYield/refs/heads/main/spider.lua",true))()
 	end)
 end
-coroutine.wrap(ZYNDBL_fake_script)()
-local function OHOOHWI_fake_script() -- TextButton_11.LocalScript 
+coroutine.wrap(FBNVEJA_fake_script)()
+local function LOLEJ_fake_script() -- TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_11)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/xenqXD/ModdedYield/refs/heads/main/Flip",true))()
 	end)
 end
-coroutine.wrap(OHOOHWI_fake_script)()
-local function MTEND_fake_script() -- TextButton_12.LocalScript 
+coroutine.wrap(LOLEJ_fake_script)()
+local function JMNOORH_fake_script() -- TextButton_12.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_12)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xenqXD/ModdedYield/refs/heads/main/explodetool.lua",true))()
 	end)
 end
-coroutine.wrap(MTEND_fake_script)()
-local function DJVJQMA_fake_script() -- Frame.Dragify 
+coroutine.wrap(JMNOORH_fake_script)()
+local function MVSPLA_fake_script() -- Frame.Dragify 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
@@ -389,4 +389,4 @@ local function DJVJQMA_fake_script() -- Frame.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(DJVJQMA_fake_script)()
+coroutine.wrap(MVSPLA_fake_script)()
